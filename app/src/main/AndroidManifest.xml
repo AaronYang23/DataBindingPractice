@@ -13,12 +13,17 @@
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.DataBindingPractice.NoActionBar">
+
+        </activity>
+        <activity android:name=".databiding.DataBindingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".lifecycle.OneActivity"/>
+        <activity android:name=".lifecycle.TwoActivity"/>
     </application>
 
 </manifest>
