@@ -17,7 +17,7 @@ DataBinding学习使用
  #### 1、无需findviewById
   选中根布局 Alt+回车 ->  `convert to data binding layout`
   对应Activity下,使用
-      var binding =  DataBindlingDataBindingUtil.setContent(Activiry.this,R.layout.ac_databinding_practice_1)
+      var binding = DataBindingUtil.setContent(Activiry.this,R.layout.ac_databinding_practice_1)
       通过binding对象可以直接获取到对应layout视图下的控件
   
   
@@ -32,3 +32,8 @@ DataBinding学习使用
   3、get方法注解@bindale
   4、set方法设置值之后调用notifyPropertyChanged（BR.age）刷新绑定此数据的界面，（BR.age 类似于R文件下的id，自动生成）
   5、记得给layout下的variable对象赋值
+
+
+总结：主要东西：DataBindingUtil、@{activity::onClick}、extends BaseObeserver、@bindale、notifyPropertyChanged()
+
+备注：避免阅读混乱，控件命名需要规范，控件要有控件缩写标识

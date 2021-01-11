@@ -37,7 +37,6 @@ class DataBindingActivity : AppCompatActivity() {
         //如果view层的数据没有设置进去，那么数据不会填充，点击事件都会无效
         binding2!!.person = person
         binding2!!.dataBindingActivity = this
-        binding2!!.personToString.text = person.toString()
     }
 
 
