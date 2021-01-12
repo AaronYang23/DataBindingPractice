@@ -6,13 +6,13 @@
     <data>
         <variable
             name="twoActiviy"
-            type="com.yyx.lifecycle.TwoActivity" />
+            type="com.yyx.lifecycle.LifecycleTwoActivity" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".lifecycle.TwoActivity">
+        tools:context=".lifecycle.LifecycleTwoActivity">
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"

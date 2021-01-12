@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="oneActivity"
-            type="com.yyx.lifecycle.OneActivity" />
+            type="com.yyx.lifecycle.LifecycleOneActivity" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".lifecycle.OneActivity">
+        tools:context=".lifecycle.LifecycleOneActivity">
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"

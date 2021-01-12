@@ -10,10 +10,7 @@ import androidx.lifecycle.OnLifecycleEvent
  * Date: 2021/1/7
  * Function:
  */
-class MyLifecycle(name:String) : LifecycleObserver {
-
-    var name:String = name
-
+class MyLifecycleOne(val name: String) : LifecycleObserver {
 
     @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
     fun onActivityCreate() {

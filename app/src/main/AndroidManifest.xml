@@ -16,14 +16,17 @@
 
         </activity>
         <activity android:name=".databiding.DataBindingActivity">
+
+        </activity>
+        <activity android:name=".lifecycle.LifecycleOneActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
-        <activity android:name=".lifecycle.OneActivity"/>
-        <activity android:name=".lifecycle.TwoActivity"/>
+        <activity android:name=".lifecycle.LifecycleTwoActivity"/>
     </application>
 
 </manifest>

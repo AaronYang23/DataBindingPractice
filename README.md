@@ -37,3 +37,17 @@ DataBinding学习使用
 总结：主要东西：DataBindingUtil、@{activity::onClick}、extends BaseObeserver、@bindale、notifyPropertyChanged()
 
 备注：避免阅读混乱，控件命名需要规范，控件要有控件缩写标识
+
+
+# Lifecycle
+1、需要能获取到avtivity或者fragment的类实现LifecycleObserver接口,对应的方法下能获取到所需页面的生命周期（比如Presenter、ViewModel）
+
+    注意点：
+    java8一下：实现LifecycleObeserver，要观察的周期带上注解
+    java8：实现DefaultObservable，不需要注解
+
+2、需要观察的activity/fragment  添加观察lifecycle ：获取lifecycle对象 然后addObserver(实现了1接口的对象)
+
+- 实现lifecycleobserver中可以多个方法注解生命周期 均可执行
+- 一个lifecycle类可以观察多个activity（都是新对象）
+- 一个页面可以被多个lifecycle观察
